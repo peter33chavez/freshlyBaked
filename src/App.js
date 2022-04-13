@@ -1,30 +1,15 @@
-import LandingImage from "./Images/11.jpeg";
-import CallNowButton from "./components/CallNowButton";
-import Header from "./components/Header";
 import "./App.css";
 import Layout from "./components/Layout";
+import Hours from "./components/Hours";
+import CallToAction from "./components/CallToAction";
 
 function App() {
   return (
     <div className="App">
       <Layout />
-      <div className="hours-container">
-        <h3 className="days">Mon - Fri</h3>
-        <div className="divider"></div>
-        <h3 className="hours">10:30am - 2:30pm</h3>
-      </div>
-      <div className="landing-page-quote">
-        <h1>FRESH SANDWICHES MADE TO ORDER.</h1>
-      </div>
-      <a>
-        <img
-          src={LandingImage}
-          alt="Landing Page Image"
-          width={800}
-          height={800}
-        />
-      </a>
-      <CallNowButton />
+      <Hours />
+      <CallToAction />
+      <div className="divider-line" style={{ marginBottom: "2rem" }}></div>
     </div>
   );
 }
