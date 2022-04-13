@@ -1,16 +1,12 @@
-import NavBar from "./NavBar";
-
 const Header = () => {
   return (
     <div className="header-container">
-      <div className="logo"></div>
       <div className="title">
-        <span>Freshly </span>
-        <span>Baked </span>
-        <span>Eatery </span>
+        <span className="first-text">Freshly </span>
+        <span className="second-text">Baked </span>
+        <span className="first-text">Eatery </span>
       </div>
       <div className="divider-line"></div>
-      <NavBar />
     </div>
   );
 };

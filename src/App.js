@@ -2,11 +2,12 @@ import LandingImage from "./Images/11.jpeg";
 import CallNowButton from "./components/CallNowButton";
 import Header from "./components/Header";
 import "./App.css";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Layout />
       <div className="hours-container">
         <h3 className="days">Mon - Fri</h3>
         <div className="divider"></div>
@@ -16,11 +17,11 @@ function App() {
         <h1>FRESH SANDWICHES MADE TO ORDER.</h1>
       </div>
       <a>
-        <image
+        <img
           src={LandingImage}
           alt="Landing Page Image"
-          width={1000}
-          height={1000}
+          width={800}
+          height={800}
         />
       </a>
       <CallNowButton />
