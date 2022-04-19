@@ -7,7 +7,7 @@ import Location from "./Pages/Location";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
         </Routes>
       </Layout>
-    </div>
+    </>
   );
 }
 

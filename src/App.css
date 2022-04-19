@@ -3,7 +3,7 @@
   --secondary-color: #B38C44;
   --primary-font: Yanone Kaffeesatz, sans-serif;
 }
-.App{
+* {
   font-family: var(--primary-font);
 }
 /* Header */
@@ -31,12 +31,15 @@
   display: flex;
   gap: 2rem;
   font-size: 30px;
+  padding-left: 2rem;
+ 
   
 }
 .nav-item a{
   text-decoration: none;
   color: black;
 }
+
 
 /* Hours */
 
@@ -57,16 +60,12 @@
 /* call to action */
 .call-to-action-container{
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 0 3rem 3rem 3rem;
-
-  
-}
-.landing-page-quote {
   position: relative;
-  right: -160px;
-  z-index: 999;
 }
+
 .landing-page-quote h1{
   font-family: Montserrat, sans-serif;
   font-size: 64px;
@@ -91,4 +90,40 @@
   font-size: 30px;
   letter-spacing: 1px;
   font-family: var(--primary-font);
+}
+
+/* QUERIES */
+
+@media (max-width: 700px) {
+  /* HEADER */
+    .title{
+      justify-content: center;
+    }
+
+  /* NAVBAR */
+  .nav-items{
+    font-size: 25px;
+    justify-content: center;
+  
+  }
+
+ 
+
+}
+@media(min-width: 700px){
+   /* CALL TO ACTION */
+   .call-to-action-container{
+    flex-direction: row; 
+  }
+   .landing-page-quote {
+    position: absolute;
+    left: 50px;
+    z-index: 999;
+  }
+  .img-container{
+   margin-left: auto;
+    max-width: 898px;
+    
+  }
+
 }
